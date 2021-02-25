@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.neighbour_details.NeighbourDetailsActivity"
+    tools:showIn="@layout/activity_neighbour_details"
+    android:background="#DCDCDC">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            >
+            <TextView
+                android:id="@+id/usernameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Caroline"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:id="@+id/addressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_place_24"
+                android:drawableTint="#FF69B4"
+                tools:text="7 rue de chez moi"
+                />
+
+            <TextView
+                android:id="@+id/phoneNumberTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawableStart="@drawable/ic_phone_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#FF69B4"
+                tools:text="+33 6 66 66 66 66"
+                />
+
+            <TextView
+                android:id="@+id/facebookUrlTV"
+                android:autoLink="web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawableStart="@drawable/ic_language_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="#FF69B4"
+                tools:text="www.facebook.fr/caroline"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            >
+            <TextView
+                android:id="@+id/aboutMeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/a_propos_de_moi"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:id="@+id/aboutMeDetailsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                tools:text="blablabla"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
